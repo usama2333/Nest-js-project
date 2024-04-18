@@ -1,0 +1,24 @@
+GET http://localhost:3000
+
+### send fetch songs request
+GET http://localhost:3000/songs
+
+### finf fetch songs request
+GET http://localhost:3000/songs/1
+
+### create new song request
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+    "title": "lasting lover",
+    "artists": ["sigla","martin"],
+    "releaseDate": "2024-02-11",
+    "duration": "02:22"
+}
+
+### update song request
+PUT http://localhost:3000/songs/1
+
+### delete song request
+DELETE  http://localhost:3000/songs/1
